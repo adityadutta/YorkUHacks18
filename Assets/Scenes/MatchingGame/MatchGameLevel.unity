@@ -3675,17 +3675,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardFace:
-  - {fileID: 21300000, guid: b632df583b6670740ae0720941b9b7cd, type: 3}
-  - {fileID: 21300000, guid: f0edd7e056761ad4ab06f79f62bdf1b1, type: 3}
-  - {fileID: 21300000, guid: 38a2babddc4a871469bc1b8aaa1a317e, type: 3}
-  - {fileID: 21300000, guid: 70c29e4434407df44b8afa991269c995, type: 3}
-  - {fileID: 21300000, guid: 20dee0baaef603544bd41c7f9abd585e, type: 3}
-  - {fileID: 21300000, guid: ed79c259c930853439d8a8a135543824, type: 3}
-  - {fileID: 21300000, guid: 6fd2177276c943e49bcaaa41859b789b, type: 3}
-  - {fileID: 21300000, guid: 4051e8fff6c33d54b979d3401e0463b9, type: 3}
-  - {fileID: 21300000, guid: 410c1446b549b1f449bf9f1d9c4a19ef, type: 3}
-  - {fileID: 21300000, guid: 0fc4421991b4059489324137edb00960, type: 3}
-  - {fileID: 21300000, guid: 6ee665d961b8559498ec676332e25a83, type: 3}
+  - {fileID: 21300000, guid: c870eb1964271944dabd722546fe44ff, type: 3}
+  - {fileID: 21300000, guid: b3621eba267d9aa4b9b9d70633f93617, type: 3}
+  - {fileID: 21300000, guid: 0efb3ed1801d6b24dad0af0886ef6033, type: 3}
+  - {fileID: 21300000, guid: 66472b88337cc5e4cb748957f10ceb7f, type: 3}
+  - {fileID: 21300000, guid: 37b0e67103428b3408d698c2f410a7e6, type: 3}
+  - {fileID: 21300000, guid: 9acbf07ecdaeb5e4aa6811b7f6e17515, type: 3}
+  - {fileID: 21300000, guid: b292acf50b1a61a4b8559c8c46671e6b, type: 3}
+  - {fileID: 21300000, guid: 6fd2d36b13b8b0d4db56015250c4de60, type: 3}
+  - {fileID: 21300000, guid: 42642e7f7721bde4bb4bb4f46605dd9f, type: 3}
+  - {fileID: 21300000, guid: 1a3721ec1ef855a4ab3b34a8ac53775b, type: 3}
+  - {fileID: 21300000, guid: 90f459b483f7b194da4bf79503feec1c, type: 3}
   cardBack: {fileID: 21300000, guid: bbf9c0def3aa18d4ea33db52ffc69142, type: 3}
   cards:
   - {fileID: 601905905}
