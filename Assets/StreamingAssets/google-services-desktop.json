@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "907911509601",
+    "firebase_url": "https://yorkuhacks18.firebaseio.com",
+    "project_id": "yorkuhacks18",
+    "storage_bucket": "yorkuhacks18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907911509601:android:8416bb876bb20718",
+        "android_client_info": {
+          "package_name": "com.yorkuhacks18.alzgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907911509601-boqvc0f0ubk03drkb401ibdc2t3bm3e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKE0RtNJ7JAdkfEBKekyCV1ArmR60rBig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
