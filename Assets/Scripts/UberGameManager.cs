@@ -26,6 +26,16 @@ public class UberGameManager : MonoBehaviour
         SceneManager.LoadScene("PatientProfile");
     }
 
+    public void toTypeGameStats()
+    {
+        SceneManager.LoadScene("TypeGameStats");
+    }
+
+    public void toMatchGameStats()
+    {
+        SceneManager.LoadScene("MatchGameStats");
+    }
+
     public void toPatientSelect()
     {
         SceneManager.LoadScene("DoctorPatients");
