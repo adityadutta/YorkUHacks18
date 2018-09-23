@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 public class UberGameManager : MonoBehaviour
 {
 
+    public static UberGameManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     private void Start()
     {
         DontDestroyOnLoad(gameObject);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WordManager : MonoBehaviour
 {
-
     public List<Word> words;
     public WordSpawner wordSpawner;
     //Word Typed
@@ -54,8 +53,23 @@ public class WordManager : MonoBehaviour
     }
 
     //Missed Points
-    public float GetMissedWord ()
+    public bool GetMissedWord ()
     {
-        return totalWord - wordTyped;
+        return totalWord - wordTyped >= 10f;
+
+    }
+
+    public void GameOver ()
+    {
+        if (GetMissedWord())
+        {
+            Debug.Log("1");
+            UberGameManager.instance.toGameSelect();
+        }
+    }
+
+    private void Update()
+    {
+        GameOver();
     }
 }
