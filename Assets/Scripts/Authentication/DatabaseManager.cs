@@ -10,6 +10,7 @@ public class DatabaseManager : MonoBehaviour {
 
     public static DatabaseManager sharedInstance = null;
     public Player player;
+    public Doctor doctor;
 
     private void Awake()
     {

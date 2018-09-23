@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 1378157702}
   - component: {fileID: 1378157701}
   m_Layer: 5
-  m_Name: doctorLogin
+  m_Name: loadMatchGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 97833930}
-        m_MethodName: toDoctorLogin
+        m_MethodName: loadMatchGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 1754182975}
   - component: {fileID: 1754182974}
   m_Layer: 5
-  m_Name: patientLogin
+  m_Name: loadTypeGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 97833930}
-        m_MethodName: toPatientLogin
+        m_MethodName: loadTypeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

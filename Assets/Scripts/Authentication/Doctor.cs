@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doctor : MonoBehaviour {
+public class Doctor{
 
     //class properties
     public string email;

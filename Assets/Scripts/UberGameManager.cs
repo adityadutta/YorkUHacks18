@@ -20,4 +20,14 @@ public class UberGameManager : MonoBehaviour
     {
         SceneManager.LoadScene("DoctorLogin");
     }
+
+    public void loadTypeGame()
+    {
+        SceneManager.LoadScene("TypingGame");
+    }
+
+    public void loadMatchGame()
+    {
+        SceneManager.LoadScene("MatchGameMenu");
+    }
 }

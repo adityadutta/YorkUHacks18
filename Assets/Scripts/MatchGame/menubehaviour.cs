@@ -10,7 +10,7 @@ public class menubehaviour : MonoBehaviour {
         {
             default:
             case (0):
-                SceneManager.LoadScene("Level");
+                SceneManager.LoadScene("MatchGameLevel");
                 break;
             case (1):
                 Application.Quit();

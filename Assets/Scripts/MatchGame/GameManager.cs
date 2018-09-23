@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
     IEnumerator levelFinished()
     {
         yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("MatchGameMenu");
     }
 
 
