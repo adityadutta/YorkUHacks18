@@ -6,14 +6,20 @@ public class Player{
 
     //class properties
     public string email;
+    public string name;
+    public string doctorName;
 
-    public Player(string _email)
+    public Player(string email, string name, string doctorName)
     {
-        email = _email;
+        this.email = email;
+        this.name = name;
+        this.doctorName = doctorName;
     }
 
     public Player(IDictionary<string, object> dict)
     {
-        this.email = dict["email"].ToString(); 
+        this.email = dict["email"].ToString();
+        this.name = dict["name"].ToString();
+        this.doctorName = dict["doctorName"].ToString();
     }
 }

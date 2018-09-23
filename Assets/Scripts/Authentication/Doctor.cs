@@ -6,14 +6,17 @@ public class Doctor{
 
     //class properties
     public string email;
+    public string name;
 
-    public Doctor(string _email)
+    public Doctor(string email, string name)
     {
-        email = _email;
+        this.email = email;
+        this.name = name;
     }
 
     public Doctor(IDictionary<string, object> dict)
     {
         this.email = dict["email"].ToString();
+        this.name = dict["name"].ToString();
     }
 }

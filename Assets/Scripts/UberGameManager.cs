@@ -11,9 +11,24 @@ public class UberGameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void toGameSelect()
+    {
+        SceneManager.LoadScene("GameSelect");
+    }   
+
     public void toPatientLogin()
     {
         SceneManager.LoadScene("PatientLogin");
+    }
+
+    public void toPatientProfile()
+    {
+        SceneManager.LoadScene("PatientProfile");
+    }
+
+    public void toPatientSelect()
+    {
+        SceneManager.LoadScene("DoctorPatients");
     }
 
     public void toDoctorLogin()

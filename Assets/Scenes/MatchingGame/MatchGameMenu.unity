@@ -697,9 +697,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 237912899}
-        m_MethodName: triggermenubehaviour
-        m_Mode: 3
+      - m_Target: {fileID: 114137628916203828, guid: e6bd4ef25df4dd74b943ebc21a9b6ee1,
+          type: 2}
+        m_MethodName: toGameSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

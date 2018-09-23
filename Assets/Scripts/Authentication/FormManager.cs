@@ -20,6 +20,8 @@ public class FormManager : MonoBehaviour
     public InputField _name;
     public InputField emailInput;
     public InputField passwordInput;
+    public InputField doctorNameInput;
+
     public InputField emailInputLogin;
     public InputField passwordInputLogin;
 
@@ -130,7 +132,7 @@ public class FormManager : MonoBehaviour
                 Firebase.Auth.FirebaseUser newPlayer = task.Result;
                 Debug.LogFormat("Welcome to AlzWorld {0}", newPlayer.Email);
 
-                Player player = new Player(newPlayer.Email);
+                Player player = new Player(newPlayer.Email, _name.text, doctorNameInput.text);
                 DatabaseManager.sharedInstance.CreateNewPlayer(player, newPlayer.UserId);
 
                 yield return new WaitForSeconds(1.5f);
@@ -141,13 +143,22 @@ public class FormManager : MonoBehaviour
                 Firebase.Auth.FirebaseUser newDoctor = task.Result;
                 Debug.LogFormat("Welcome to AlzWorld {0}", newDoctor.Email);
 
-                Doctor doctor = new Doctor(newDoctor.Email);
+                Doctor doctor = new Doctor(newDoctor.Email, _name.text);
                 DatabaseManager.sharedInstance.CreateNewDoctor(doctor, newDoctor.UserId);
 
                 yield return new WaitForSeconds(1.5f);
                 SceneManager.LoadScene("DoctorPatients");
             }
-
+            if (operation == "login")
+            {
+                yield return new WaitForSeconds(1.5f);
+                SceneManager.LoadScene("GameSelect");
+            }
+            if (operation == "login_doctor")
+            {
+                yield return new WaitForSeconds(1.5f);
+                SceneManager.LoadScene("DoctorPatients");
+            }
         }
     }
 

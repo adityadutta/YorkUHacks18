@@ -33,10 +33,13 @@ public class DatabaseManager : MonoBehaviour {
 
         //GetPlayers(result =>
         //{
-        //    player = result;
-        //    Debug.Log(player);
-
+        //    Debug.Log("GET PLAYERs");
+        //    foreach (Player player in result)
+        //    {
+        //        Debug.Log(player.name);
+        //    }
         //});
+
     }
 
     public void CreateNewPlayer(Player player, string uid)
@@ -45,20 +48,26 @@ public class DatabaseManager : MonoBehaviour {
         Router.PlayerWithUID(uid).SetRawJsonValueAsync(playerJSON);
     }
 
-    public void GetPlayers(Action<Player> completionBlock)
+    public void GetPlayers(Action<List<Player>> completionBlock)
     {
-        //List<Player> tmpList = new List<Player>();
+        List<Player> tmpList = new List<Player>();
 
         Router.Players().GetValueAsync().ContinueWith(task =>
         {
-            DataSnapshot _player = task.Result;
+            DataSnapshot players = task.Result;
 
-            var playerDict = (IDictionary<string, object>)_player.Value;
-            Player newPlayer = new Player(playerDict);
+            foreach (DataSnapshot playerNode in players.Children)
+            {
 
-            completionBlock(newPlayer);
+                var playerDict = (IDictionary<string, object>)playerNode.Value;
+                Player newPlayer = new Player(playerDict);
+                tmpList.Add(newPlayer);
+            }
+
+            completionBlock(tmpList);
         });
     }
+
 
     public void CreateNewDoctor(Doctor doctor, string uid)
     {
@@ -66,17 +75,24 @@ public class DatabaseManager : MonoBehaviour {
         Router.DoctorWithUID(uid).SetRawJsonValueAsync(doctorJSON);
     }
 
-    public void GetDoctors(Action<Doctor> completionBlock)
+    public void GetDoctors(Action<List<Doctor>> completionBlock)
     {
 
-        Router.Doctors().GetValueAsync().ContinueWith(task =>
+        List<Doctor> tmpList = new List<Doctor>();
+
+        Router.Players().GetValueAsync().ContinueWith(task =>
         {
-            DataSnapshot _doctor = task.Result;
+            DataSnapshot doctors = task.Result;
 
-            var doctorDict = (IDictionary<string, object>)_doctor.Value;
-            Doctor newDoctor = new Doctor(doctorDict);
+            foreach (DataSnapshot doctorNode in doctors.Children)
+            {
 
-            completionBlock(newDoctor);
+                var doctorDict = (IDictionary<string, object>)doctorNode.Value;
+                Doctor newDoctor = new Doctor(doctorDict);
+                tmpList.Add(newDoctor);
+            }
+
+            completionBlock(tmpList);
         });
     }
 }

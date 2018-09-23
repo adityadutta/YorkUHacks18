@@ -3679,6 +3679,7 @@ MonoBehaviour:
   _name: {fileID: 537948181}
   emailInput: {fileID: 1565416746}
   passwordInput: {fileID: 1473716892}
+  doctorNameInput: {fileID: 0}
   emailInputLogin: {fileID: 1468514943}
   passwordInputLogin: {fileID: 174259368}
   signUpButton: {fileID: 1520538838}
